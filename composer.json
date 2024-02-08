@@ -1,0 +1,18 @@
+{
+    "name": "rpmeir/php-unit-tests",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Rpmeir\\PhpUnitTests\\": "src/"
+        }
+    },
+    "require-dev": {
+        "pestphp/pest": "^1.23"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
