@@ -4,7 +4,14 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Rpmeir\\PhpUnitTests\\": "src/"
+            "CDC\\Loja\\" : [
+                "src/CDC/Loja",
+                "tests/CDC/Loja"
+            ],
+            "CDC\\Exemplos\\" : [
+                "src/CDC/Exemplos",
+                "tests/CDC/Exemplos"
+            ]
         }
     },
     "require-dev": {
