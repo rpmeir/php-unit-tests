@@ -10,7 +10,7 @@ const GELADEIRA = "Geladeira";
 test("testOrdemDecrescente", function () {
     $carrinho = new CarrinhoDeCompras();
     $carrinho->adiciona(new Produto(GELADEIRA, 450.00));
-    $carrinho->adiciona(new Produto("Liquididificador", 250.00));
+    $carrinho->adiciona(new Produto("Liquidificador", 250.00));
     $carrinho->adiciona(new Produto(JOGO_DE_PRATOS, 70.00));
 
     $maiorMenor = new MaiorEMenor();
@@ -24,7 +24,7 @@ test("testOrdemVariada", function () {
     $carrinho = new CarrinhoDeCompras();
     $carrinho->adiciona(new Produto(GELADEIRA, 450.00));
     $carrinho->adiciona(new Produto(JOGO_DE_PRATOS, 70.00));
-    $carrinho->adiciona(new Produto("Liquididificador", 250.00));
+    $carrinho->adiciona(new Produto("Liquidificador", 250.00));
 
     $maiorMenor = new MaiorEMenor();
     $maiorMenor->encontra($carrinho);
