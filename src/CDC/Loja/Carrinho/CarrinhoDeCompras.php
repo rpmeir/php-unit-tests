@@ -2,6 +2,7 @@
 
 namespace CDC\Loja\Carrinho;
 
+use ArrayObject;
 use CDC\Loja\Produto\Produto;
 
 class CarrinhoDeCompras
@@ -10,12 +11,12 @@ class CarrinhoDeCompras
 
     public function __construct()
     {
-        $this->produtos = array();
+        $this->produtos = new ArrayObject();
     }
 
     public function adiciona(Produto $produto)
     {
-        $this->produtos[] = $produto;
+        $this->produtos->append($produto);
         return $this;
     }
 

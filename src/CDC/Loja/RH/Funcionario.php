@@ -20,13 +20,13 @@ class Funcionario
         return $this->nome;
     }
 
-    public function getCargo()
-    {
-        return $this->cargo;
-    }
-
     public function getSalario()
     {
         return $this->salario;
+    }
+
+    public function getCargo()
+    {
+        return $this->cargo;
     }
 }
